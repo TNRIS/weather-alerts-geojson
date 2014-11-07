@@ -1,0 +1,24 @@
+{
+  "name": "weather-alerts-geojson",
+  "version": "0.0.1",
+  "description": "Streaming conversion of National Weather Service alerts to GeoJSON",
+  "scripts": {
+    "test": "node test/*.js"
+  },
+  "author": "Andy Wilson",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tnris/weather-alerts-geojson"
+  },
+  "bugs": {
+    "url": "https://github.com/tnris/weather-alerts-geojson/issues"
+  },
+  "homepage": "https://github.com/tnris/weather-alerts-geojson/issues",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "tape": "^3.0.2",
+    "weather-alerts-parser": "^0.1.0"
+  },
+  "dependencies": {
+  }
+}
