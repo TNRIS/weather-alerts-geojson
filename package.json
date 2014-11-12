@@ -20,5 +20,6 @@
     "weather-alerts-parser": "^0.1.0"
   },
   "dependencies": {
+    "through": "^2.3.6"
   }
 }

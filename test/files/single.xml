@@ -30,37 +30,35 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <link href='http://alerts.weather.gov/cap/us.atom'/>
 
 	<entry>
-	<id>http://alerts.weather.gov/cap/wwacapget.php?x=TX1251776ADD3C.FloodWarning.1251777B0D60TX.EWXFLWEWX.4a8765ae1fff40e5e6ef663bbcb8ed7f</id>
-	<updated>2014-11-05T08:31:00-06:00</updated>
-	<published>2014-11-05T08:31:00-06:00</published>
+	<id>http://alerts.weather.gov/cap/wwacapget.php?x=AK1251776ADAE4.HighWindWarning.125177795010AK.AJKNPWAJK.0b2fbe9c62ef103901a2841f43c56168</id>
+	<updated>2014-11-05T06:25:00-09:00</updated>
+	<published>2014-11-05T05:25:00-09:00</published>
 	<author>
 	<name>w-nws.webmaster@noaa.gov</name>
 	</author>
-	<title>Flood Warning issued November 05 at 8:31AM CST until November 06 at 2:40PM CST by NWS</title>
-	<link href='http://alerts.weather.gov/cap/wwacapget.php?x=TX1251776ADD3C.FloodWarning.1251777B0D60TX.EWXFLWEWX.4a8765ae1fff40e5e6ef663bbcb8ed7f'/>
-	<summary>...THE NATIONAL WEATHER SERVICE IN AUSTIN/SAN ANTONIO HAS ISSUED A FLOOD WARNING FOR THE... RIO GRANDE THE NATIONAL WEATHER SERVICE IN AUSTIN/SAN ANTONIO HAS ISSUED A * FLOOD WARNING FOR THE RIO GRANDE AT FOSTER RANCH. * FROM THIS EVENING TO THURSDAY AFTERNOON...OR UNTIL THE WARNING IS CANCELLED.</summary>
-	<cap:event>Flood Warning</cap:event>
-	<cap:effective>2014-11-05T08:31:00-06:00</cap:effective>
-	<cap:expires>2014-11-06T14:40:00-06:00</cap:expires>
+	<title>High Wind Warning issued November 05 at 5:25AM AKST until November 06 at 12:00AM AKST by NWS</title>
+	<link href='http://alerts.weather.gov/cap/wwacapget.php?x=AK1251776ADAE4.HighWindWarning.125177795010AK.AJKNPWAJK.0b2fbe9c62ef103901a2841f43c56168'/>
+	<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 3 PM THIS AFTERNOON TO MIDNIGHT AKST TONIGHT... * LOCATION...PORTIONS OF THE THE SOUTHERN PANHANDLE INCLUDING SOUTHERN BARANOF ISLAND...KUIU ISLAND...SOUTHERN KUPREANOF ISLAND...ETOLIN ISLAND AND ZAREMBO ISLAND. * WIND...25 TO 40 MPH WITH GUSTS TO AROUND 60 MPH. STRONGEST WINDS IN</summary>
+	<cap:event>High Wind Warning</cap:event>
+	<cap:effective>2014-11-05T05:25:00-09:00</cap:effective>
+	<cap:expires>2014-11-06T00:00:00-09:00</cap:expires>
 	<cap:status>Actual</cap:status>
 	<cap:msgType>Alert</cap:msgType>
 	<cap:category>Met</cap:category>
 	<cap:urgency>Expected</cap:urgency>
-	<cap:severity>Moderate</cap:severity>
+	<cap:severity>Severe</cap:severity>
 	<cap:certainty>Likely</cap:certainty>
-	<cap:areaDesc>Val Verde</cap:areaDesc>
+	<cap:areaDesc>Cape Decision to Salisbury Sound Coastal Area; Inner Channels from Kupreanof Island to Etolin Island</cap:areaDesc>
 	<cap:polygon>29.75,-101.76 29.82,-101.76 29.82,-101.46 29.62,-101.22 29.54,-101.28 29.73,-101.47 29.75,-101.76</cap:polygon>
 	<cap:geocode>
 	<valueName>FIPS6</valueName>
-	<value>048465</value>
+	<value>002105 002195 002198 002220 002275</value>
 	<valueName>UGC</valueName>
-	<value>TXC465</value>
+	<value>AKZ023 AKZ026</value>
 	</cap:geocode>
 	<cap:parameter>
 	<valueName>VTEC</valueName>
-	<value>/O.NEW.KEWX.FL.W.0021.141106T0528Z-141106T2040Z/
-/LNYT2.1.ER.141106T0528Z.141106T0600Z.141106T0840Z.NO/</value>
+	<value>/X.CON.PAJK.HW.W.0011.141106T0000Z-141106T0900Z/</value>
 	</cap:parameter>
 	</entry>
-
 </feed>
