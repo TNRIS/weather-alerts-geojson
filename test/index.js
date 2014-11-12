@@ -27,12 +27,13 @@ test('single.xml', function (t) {
     });
 
     t.test('county features are populated', function(t2) {
-      t2.plan(2);
+      t2.plan(3);
       t2.equals(fc.features.length, 8);
 
       var expectedCounty = find(countyFeatureCollection.features, {id: '048025'});
       var foundCounty = fc.features[1];
 
+      t2.notEqual(expectedCounty.geometry, undefined);
       t2.deepEqual(expectedCounty.geometry, foundCounty.geometry);
     });
   }));
