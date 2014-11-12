@@ -8,14 +8,13 @@ var through = require('through');
 var topojson = require('topojson');
 var parser = require('weather-alerts-parser');
 
-
 var find = require('lodash.find');
 
-var converter = require('../lib/index.js')();
+var geojsonStream = require('../lib/index.js')();
 
-test('single', function (t) {
+test('single.xml', function (t) {
   var filepath = path.join(__dirname, 'files/single.xml');
-  var stream = fs.createReadStream(filepath).pipe(parser.stream()).pipe(converter);
+  var stream = fs.createReadStream(filepath).pipe(parser.stream()).pipe(geojsonStream);
 
   var countyTopo = require('../data/us-counties-10m-topo');
   var countyFeatureCollection = topojson.feature(countyTopo, countyTopo.objects.counties);
