@@ -30,35 +30,36 @@ xmlns:ha = 'http://www.alerting.net/namespace/index_1.0'
 <link href='http://alerts.weather.gov/cap/us.atom'/>
 
 	<entry>
-	<id>http://alerts.weather.gov/cap/wwacapget.php?x=AK1251776ADAE4.HighWindWarning.125177795010AK.AJKNPWAJK.0b2fbe9c62ef103901a2841f43c56168</id>
-	<updated>2014-11-05T06:25:00-09:00</updated>
-	<published>2014-11-05T05:25:00-09:00</published>
+	<id>http://alerts.weather.gov/cap/wwacapget.php?x=TX1251776A4868.FlashFloodWatch.12517777F080TX.CRPFFACRP.0d0ec6494e56d3f82770fb0b747edd3c</id>
+	<updated>2014-11-05T04:50:00-06:00</updated>
+	<published>2014-11-05T04:50:00-06:00</published>
 	<author>
 	<name>w-nws.webmaster@noaa.gov</name>
 	</author>
-	<title>High Wind Warning issued November 05 at 5:25AM AKST until November 06 at 12:00AM AKST by NWS</title>
-	<link href='http://alerts.weather.gov/cap/wwacapget.php?x=AK1251776ADAE4.HighWindWarning.125177795010AK.AJKNPWAJK.0b2fbe9c62ef103901a2841f43c56168'/>
-	<summary>...HIGH WIND WARNING REMAINS IN EFFECT FROM 3 PM THIS AFTERNOON TO MIDNIGHT AKST TONIGHT... * LOCATION...PORTIONS OF THE THE SOUTHERN PANHANDLE INCLUDING SOUTHERN BARANOF ISLAND...KUIU ISLAND...SOUTHERN KUPREANOF ISLAND...ETOLIN ISLAND AND ZAREMBO ISLAND. * WIND...25 TO 40 MPH WITH GUSTS TO AROUND 60 MPH. STRONGEST WINDS IN</summary>
-	<cap:event>High Wind Warning</cap:event>
-	<cap:effective>2014-11-05T05:25:00-09:00</cap:effective>
-	<cap:expires>2014-11-06T00:00:00-09:00</cap:expires>
+	<title>Flash Flood Watch issued November 05 at 4:50AM CST until November 05 at 6:00PM CST by NWS</title>
+	<link href='http://alerts.weather.gov/cap/wwacapget.php?x=TX1251776A4868.FlashFloodWatch.12517777F080TX.CRPFFACRP.0d0ec6494e56d3f82770fb0b747edd3c'/>
+	<summary>...HEAVY RAINFALL EXPECTED TODAY ACROSS PORTIONS OF SOUTH TEXAS... .AN UPPER LEVEL DISTURBANCE WILL COMBINE WITH ABUNDANT MOISTURE AND A SLOW MOVING COLD FRONT TO PRODUCE NUMEROUS SHOWERS AND A FEW THUNDERSTORMS. THE HEAVIEST RAINFALL WILL OCCUR ALONG THE FRONTAL BOUNDARY...ESPECIALLY ACROSS THE RIO GRANDE PLAINS...NORTHERN COASTAL PLAINS AND THE VICTORIA CROSSROADS</summary>
+	<cap:event>Flash Flood Watch</cap:event>
+	<cap:effective>2014-11-05T04:50:00-06:00</cap:effective>
+	<cap:expires>2014-11-05T18:00:00-06:00</cap:expires>
 	<cap:status>Actual</cap:status>
 	<cap:msgType>Alert</cap:msgType>
 	<cap:category>Met</cap:category>
 	<cap:urgency>Expected</cap:urgency>
 	<cap:severity>Severe</cap:severity>
-	<cap:certainty>Likely</cap:certainty>
-	<cap:areaDesc>Cape Decision to Salisbury Sound Coastal Area; Inner Channels from Kupreanof Island to Etolin Island</cap:areaDesc>
+	<cap:certainty>Possible</cap:certainty>
+	<cap:areaDesc>Bee; Goliad; La Salle; Live Oak; McMullen; Victoria; Webb</cap:areaDesc>
 	<cap:polygon>29.75,-101.76 29.82,-101.76 29.82,-101.46 29.62,-101.22 29.54,-101.28 29.73,-101.47 29.75,-101.76</cap:polygon>
 	<cap:geocode>
 	<valueName>FIPS6</valueName>
-	<value>002105 002195 002198 002220 002275</value>
+	<value>048025 048175 048283 048297 048311 048469 048479</value>
 	<valueName>UGC</valueName>
-	<value>AKZ023 AKZ026</value>
+	<value>TXZ229 TXZ230 TXZ231 TXZ232 TXZ233 TXZ234 TXZ239</value>
 	</cap:geocode>
 	<cap:parameter>
 	<valueName>VTEC</valueName>
-	<value>/X.CON.PAJK.HW.W.0011.141106T0000Z-141106T0900Z/</value>
+	<value>/O.CON.KCRP.FF.A.0003.000000T0000Z-141106T0000Z/
+/00000.0.ER.000000T0000Z.000000T0000Z.000000T0000Z.OO/</value>
 	</cap:parameter>
 	</entry>
 </feed>

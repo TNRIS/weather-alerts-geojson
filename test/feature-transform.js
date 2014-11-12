@@ -49,7 +49,6 @@ test('features.polygonize', function (t) {
 
 
 test('features.decodify', function (t) {
-
   var test1 = {
     "id": "test1",
     "type": "Feature",
