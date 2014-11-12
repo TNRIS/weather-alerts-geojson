@@ -1,6 +1,6 @@
 'use strict';
-var test = require('tape');
 var geojsonhint = require('geojsonhint');
+var test = require('tape');
 
 var featureTransform = require('../lib/feature-transform.js');
 

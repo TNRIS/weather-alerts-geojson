@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Streaming conversion of National Weather Service alerts to GeoJSON",
   "scripts": {
-    "test": "node test/*.js"
+    "test": "node_modules/tape/bin/tape test/*.js"
   },
   "author": "Andy Wilson",
   "repository": {
