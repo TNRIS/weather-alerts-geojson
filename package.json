@@ -21,6 +21,7 @@
     "weather-alerts-parser": "^0.1.0"
   },
   "dependencies": {
+    "lodash.find": "^2.4.1",
     "through": "^2.3.6",
     "turf-polygon": "^0.1.1"
   }
