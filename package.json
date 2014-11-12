@@ -16,10 +16,12 @@
   "homepage": "https://github.com/tnris/weather-alerts-geojson/issues",
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "geojsonhint": "^0.3.4",
     "tape": "^3.0.2",
     "weather-alerts-parser": "^0.1.0"
   },
   "dependencies": {
-    "through": "^2.3.6"
+    "through": "^2.3.6",
+    "turf-polygon": "^0.1.1"
   }
 }
