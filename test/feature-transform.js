@@ -42,8 +42,7 @@ test('features.polygonize', function (t) {
 
   t.test('polygon is valid GeoJSON', function (t2) {
     t2.plan(1);
-    var errors = geojsonhint.hint(JSON.stringify(polygon));
-    t2.deepEqual(errors, []);
+    t2.deepEqual(geojsonhint.hint(JSON.stringify(polygon)), []);
   });
 });
 
@@ -183,7 +182,6 @@ test('features.decodify', function (t) {
 
   t.test('decoded feature is valid GeoJSON', function (t2) {
     t2.plan(1);
-    var errors = geojsonhint.hint(JSON.stringify(decoded));
-    t2.deepEqual(errors, []);
+    t2.deepEqual(geojsonhint.hint(JSON.stringify(decoded)), []);
   });
 });

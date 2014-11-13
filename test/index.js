@@ -23,8 +23,7 @@ test('single.xml', function (t) {
     .pipe(through(function (fc) {
       t.test('valid geojson', function(t2) {
         t2.plan(1);
-        var errors = geojsonhint.hint(JSON.stringify(fc));
-        t2.deepEqual(errors, []);
+        t2.deepEqual(geojsonhint.hint(JSON.stringify(fc)), []);
       });
 
       t.test('county features are populated', function(t2) {
