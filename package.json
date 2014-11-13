@@ -16,13 +16,16 @@
   "homepage": "https://github.com/tnris/weather-alerts-geojson/issues",
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "event-stream": "^3.1.7",
     "geojsonhint": "^0.3.4",
+    "lodash": "^2.4.1",
     "minimist": "^1.1.0",
     "tape": "^3.0.2",
     "weather-alerts-parser": "^0.1.0",
     "zero-fill": "^1.0.0"
   },
   "dependencies": {
+    "clone": "^0.1.18",
     "lodash.find": "^2.4.1",
     "lodash.merge": "^2.4.1",
     "through": "^2.3.6",
