@@ -10,10 +10,11 @@ var parser = require('weather-alerts-parser');
 
 var find = require('lodash.find');
 
-var geojsonStream = require('../lib/index.js')();
+var converter = require('../lib/index.js');
 
 test('single.xml', function (t) {
   var filepath = path.join(__dirname, 'files/single.xml');
+  var geojsonStream = converter();
   var stream = fs.createReadStream(filepath).pipe(parser.stream()).pipe(geojsonStream);
 
   var countyTopo = require('../data/us-counties-10m-topo');
@@ -37,4 +38,31 @@ test('single.xml', function (t) {
       t2.deepEqual(expectedCounty.geometry, foundCounty.geometry);
     });
   }));
+});
+
+
+test('stylize option', function (t) {
+  var filepath = path.join(__dirname, 'files/single.xml');
+
+  t.test('simple styles are added when stylize is truthy', function(t2) {
+    t2.plan(1);
+
+    fs.createReadStream(filepath).pipe(parser.stream())
+      .pipe(converter({'stylize': true}))
+      .pipe(through(function (fc) {
+        var feature = fc.features[0];
+        t2.equal(feature.properties.fill, '#2E8B57');
+      }));
+  });
+
+  t.test('simple styles are not added when stylize is falsey', function(t2) {
+    t2.plan(1);
+
+    fs.createReadStream(filepath).pipe(parser.stream())
+      .pipe(converter({'stylize': false}))
+      .pipe(through(function (fc) {
+        var feature = fc.features[0];
+        t2.equal(feature.properties.fill, undefined);
+      }));
+  });
 });

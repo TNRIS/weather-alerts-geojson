@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "lodash.find": "^2.4.1",
+    "lodash.merge": "^2.4.1",
     "through": "^2.3.6",
     "topojson": "^1.6.18",
     "turf-polygon": "^0.1.1"
