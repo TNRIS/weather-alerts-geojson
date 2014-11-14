@@ -26,6 +26,7 @@
     "zero-fill": "^1.0.0"
   },
   "dependencies": {
+    "chroma-js": "^0.6.1",
     "clone": "^0.1.18",
     "lodash.assign": "^2.4.1",
     "lodash.find": "^2.4.1",
