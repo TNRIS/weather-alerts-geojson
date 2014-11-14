@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "clone": "^0.1.18",
+    "lodash.assign": "^2.4.1",
     "lodash.find": "^2.4.1",
     "lodash.merge": "^2.4.1",
     "stream-combiner": "^0.2.1",
