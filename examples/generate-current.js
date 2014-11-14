@@ -32,4 +32,4 @@ request.get('http://alerts.weather.gov/cap/us.php?x=1')
   .pipe(cleanProperties())
   .pipe(geojson.collect({'sort': true, 'flatten': true}))
   .pipe(through(function (obj) {this.queue(JSON.stringify(obj));}))
-  .pipe(fs.createWriteStream('current-nws-alerts.json'));
+  .pipe(process.stdout);
