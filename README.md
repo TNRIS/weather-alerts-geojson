@@ -7,7 +7,6 @@ Streaming conversion of National Weather Service alerts to GeoJSON
 Usage
 =====
 
-
 `geojson.stream()` is a through-stream that converts alerts into geojson
 FeatureCollections. It is intended to be used downstream of
 [weather-alerts-parser](https://github.com/TNRIS/weather-alerts-parser). Each
@@ -32,14 +31,16 @@ tools/environs.
 Here's an example that writes a GeoJSON FeatureCollection representing the
 current alerts to stdout:
 
-    var es = require('event-stream');
-    var geojson = require('weather-alerts-geojson');
-    var parser = require('weather-alerts-parser');
-    var request = require('request');
+```node
+var es = require('event-stream');
+var geojson = require('weather-alerts-geojson');
+var parser = require('weather-alerts-parser');
+var request = require('request');
 
-    request.get('http://alerts.weather.gov/cap/us.php?x=1')
-      .pipe(parser.stream())
-      .pipe(geojson.stream({'stylize': true}))
-      .pipe(geojson.collect({'sort': true, 'flatten': true}))
-      .pipe(es.stringify())
-      .pipe(process.stdout)
+request.get('http://alerts.weather.gov/cap/us.php?x=1')
+  .pipe(parser.stream())
+  .pipe(geojson.stream({'stylize': true}))
+  .pipe(geojson.collect({'sort': true, 'flatten': true}))
+  .pipe(es.stringify())
+  .pipe(process.stdout)
+```
