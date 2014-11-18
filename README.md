@@ -38,6 +38,12 @@ index (starting at 1) of the each alert's properties. Putting properties into a
 single flat object is a little more standard and will probably be supported in
 more tools/environs.
 
+#### sort
+
+If the `sort` option is set to `true`, then alerts will be sorted by severity,
+urgency, and certainty. More severe alerts will be first, if there is a tie in
+severity then more urgent alerts will be first. If severity and urgency are the
+same, then certainty is used to break any ties there.
 
 
 Example
