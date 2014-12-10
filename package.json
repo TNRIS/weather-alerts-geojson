@@ -15,6 +15,7 @@
   },
   "homepage": "https://github.com/tnris/weather-alerts-geojson/issues",
   "license": "BSD-2-Clause",
+  "keywords": ["nws", "weather", "alerts", "geojson"],
   "devDependencies": {
     "event-stream": "^3.1.7",
     "geojsonhint": "^0.3.4",
