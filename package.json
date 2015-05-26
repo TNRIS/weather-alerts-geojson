@@ -2,6 +2,7 @@
   "name": "weather-alerts-geojson",
   "version": "0.1.1",
   "description": "Streaming conversion of National Weather Service alerts to GeoJSON",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "node_modules/tape/bin/tape test/*.js"
   },
