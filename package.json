@@ -24,7 +24,7 @@
     "minimist": "^1.1.0",
     "request": "^2.48.0",
     "tape": "^3.0.2",
-    "weather-alerts-parser": "^0.1.0",
+    "weather-alerts-parser": "^0.1.5",
     "zero-fill": "^1.0.0"
   },
   "dependencies": {
