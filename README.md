@@ -58,7 +58,14 @@ var geojson = require('weather-alerts-geojson');
 var parser = require('weather-alerts-parser');
 var request = require('request');
 
-request.get('http://alerts.weather.gov/cap/us.php?x=1')
+request.get({
+  url: 'http://alerts.weather.gov/cap/us.php?x=1',
+  headers: {
+    // The request will fail with a 403 Forbidden status code if User-Agent is
+    // empty, so we need to set one. Anything works.
+    'User-Agent': 'lol',
+  }
+})
   .pipe(parser.stream())
   .pipe(geojson.stream({'stylize': true}))
   .pipe(geojson.collect({'sort': true, 'flatten': true}))
