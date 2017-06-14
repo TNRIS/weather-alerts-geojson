@@ -26,7 +26,15 @@ function cleanProperties() {
   });
 }
 
-request.get('http://alerts.weather.gov/cap/us.php?x=1')
+// IMPORTANT: User-Agent header is required!
+var options = {
+  url: 'http://alerts.weather.gov/cap/us.php?x=1',
+  headers: {
+    'User-Agent': 'request'
+  }
+}
+
+request.get(options)
   .pipe(parser.stream())
   .pipe(geojson.stream({'stylize': true}))
   .pipe(cleanProperties())
